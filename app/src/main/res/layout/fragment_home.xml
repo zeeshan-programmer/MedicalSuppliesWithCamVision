@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".HomeFragment"
+    android:focusableInTouchMode="true">
+
+      <ScrollView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="200dp"
+                      android:background="@drawable/button_back_g"
+                      android:layout_marginBottom="10dp"
+                      android:layout_marginTop="10dp"
+                      android:layout_marginLeft="17dp"
+                      android:layout_marginRight="17dp"
+                      android:padding="20dp"
+                      android:gravity="center_vertical"
+                      android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:weightSum="2">
+                              <TextView
+                                  android:layout_width="0dp"
+                                  android:layout_height="wrap_content"
+                                  android:layout_weight="0.4"
+                                  android:text="Hey, "
+                                  android:textColor="@color/orange"
+                                  android:textSize="25sp"
+                                  android:textStyle="bold" />
+                              <TextView
+                                  android:id="@+id/name_tv"
+                                  android:layout_width="0dp"
+                                  android:layout_height="wrap_content"
+                                  android:layout_weight="1.4"
+                                  android:textColor="@color/black"
+                                  android:text="Guest"
+                                  android:textSize="17sp"
+                                  android:textStyle="bold" />
+                              <Button
+                                  android:id="@+id/cart_btn"
+                                  android:layout_width="0dp"
+                                  android:layout_height="30dp"
+                                  android:layout_weight="0.2"
+                                  android:background="@drawable/ic_outline_shopping_cart_24"/>
+                        </LinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="How can i help you?"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"/>
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            app:cardBackgroundColor="@color/blue"
+                            app:cardCornerRadius="20dp">
+                              <EditText
+                                  android:id="@+id/search_view"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="40dp"
+                                  android:hint="search"
+                                  android:iconifiedByDefault="false"
+                                  android:layout_margin="1dp"
+                                  android:drawableLeft="@drawable/search"
+                                  android:padding="10sp"
+                                  android:drawablePadding="10dp"
+                                  android:background="@drawable/button_back"/>
+                        </androidx.cardview.widget.CardView>
+
+                  </LinearLayout>
+
+                  <ImageButton
+                      android:id="@+id/upload_btn"
+                      android:layout_width="match_parent"
+                      android:layout_height="75dp"
+                      android:background="@drawable/upload"
+                      android:layout_marginLeft="5dp"
+                      android:layout_marginRight="10dp"
+                      />
+
+                  <RelativeLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="10dp"
+                      android:layout_marginLeft="17dp"
+                      android:layout_marginRight="17dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_gravity="center"
+                            android:text="Products"
+                            android:textColor="@color/black"
+                            android:textSize="17sp"
+                            android:textStyle="bold" />
+
+<!--                        <TextView-->
+<!--                            android:id="@+id/view_tv"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_alignParentRight="true"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:text="View all"-->
+<!--                            android:textColor="@color/orange"-->
+<!--                            android:textSize="15sp"-->
+<!--                            android:textStyle="bold" />-->
+                  </RelativeLayout>
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:orientation="vertical">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/bestSellerRecyclerview"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="8dp"
+                            />
+
+                  </LinearLayout>
+
+            </LinearLayout>
+      </ScrollView>
+
+</LinearLayout>

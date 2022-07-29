@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "144597358079",
+    "project_id": "medic-561c9",
+    "storage_bucket": "medic-561c9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:144597358079:android:fcd0aee0f167e0d1d483ca",
+        "android_client_info": {
+          "package_name": "jbox.skillz.medic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "144597358079-9j2u93ihl9svs1ucolhmpsmb4t3cr7ju.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "jbox.skillz.medic",
+            "certificate_hash": "85e9e5b1ce015756194d3bdcf577df389b0034fb"
+          }
+        },
+        {
+          "client_id": "144597358079-gdn5ue002leb2f8tlet2gq9cvhc1qc0h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANmP9QJ7h3gFFFXS8aL2H1LZMYpwWxtlA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "144597358079-gdn5ue002leb2f8tlet2gq9cvhc1qc0h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

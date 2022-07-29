@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:cardBackgroundColor="@color/grey"
+    android:id="@+id/crddd"
+    app:cardCornerRadius="20dp">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical"
+          android:padding="10dp"
+          android:gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your order has been placed!"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:padding="10dp"/>
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/user_profile_image"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/invoice_bike"
+                app:civ_border_color="@color/orange"
+                android:layout_margin="20dp"
+                app:civ_border_width="3dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:layout_marginTop="10dp"
+                android:text="Thank you for shopping \n with us. Your order ID is "/>
+            <TextView
+                android:id="@+id/order_id_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="C10N49X"
+                android:textColor="@color/blue"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10sp"
+                android:gravity="center">
+
+                  <Button
+                      android:id="@+id/track_order_btn"
+                      android:layout_width="100dp"
+                      android:layout_height="match_parent"
+                      android:layout_gravity="center"
+                      android:layout_marginRight="2dp"
+                      android:background="@drawable/button_blue"
+                      android:onClick="activity"
+                      android:text="Track Order"
+                      android:textColor="@color/white" />
+
+                  <Button
+                      android:id="@+id/back_to_home_btn"
+                      android:layout_width="100dp"
+                      android:layout_height="match_parent"
+                      android:layout_gravity="center_horizontal"
+                      android:layout_marginLeft="2dp"
+                      android:background="@drawable/button_white"
+                      android:text="Home"
+                      android:textColor="@color/blue"
+                      />
+            </LinearLayout>
+
+      </LinearLayout>
+
+</androidx.cardview.widget.CardView>

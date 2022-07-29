@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grey"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".OrderFagment">
+
+      <!-- TODO: Update blank fragment layout -->
+
+      <androidx.cardview.widget.CardView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+          android:layout_marginTop="10dp"
+          app:cardCornerRadius="5dp"
+          app:cardBackgroundColor="@color/blue">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                app:cardCornerRadius="5dp">
+
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="70dp"
+                      android:text="My Orders"
+                      android:gravity="center"
+                      android:background="@color/white"
+                      android:textColor="@color/light_black"
+                      android:textSize="18sp"
+                      android:textStyle="bold"
+                      android:padding="20dp"/>
+
+            </androidx.cardview.widget.CardView>
+
+      </androidx.cardview.widget.CardView>
+
+      <androidx.cardview.widget.CardView
+          android:id="@+id/orders_section"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="10dp"
+          app:cardCornerRadius="5dp"
+          app:cardBackgroundColor="@color/blue">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                app:cardCornerRadius="5dp">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/order_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            >
+                        </androidx.recyclerview.widget.RecyclerView>
+
+            </androidx.cardview.widget.CardView>
+
+      </androidx.cardview.widget.CardView>
+
+</LinearLayout>

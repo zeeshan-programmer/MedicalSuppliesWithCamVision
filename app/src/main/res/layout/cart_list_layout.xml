@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/white"
+    android:layout_marginTop="1dp"
+    android:layout_marginBottom="1dp">
+
+      <TextView
+          android:id="@+id/cart_list_layout_quantity"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:hint="quantity"
+          android:textSize="14sp"
+          android:textStyle="bold"
+          android:textColor="@color/blue"
+          android:visibility="gone"
+          />
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="130dp"
+          android:gravity="center_vertical"
+          android:paddingLeft="10dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:cardElevation="1dp"
+                app:cardCornerRadius="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="1dp"
+                app:cardBackgroundColor="@color/blue">
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:layout_margin="1dp"
+                      android:background="@color/white">
+                        <ImageView
+                            android:id="@+id/cart_list_layout_img"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"/>
+                  </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:background="@color/white"
+                android:weightSum="2">
+
+                  <LinearLayout
+                      android:layout_width="0dp"
+                      android:layout_height="match_parent"
+                        android:layout_weight="1.3"
+                      android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/cart_list_layout_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="item name"
+                            android:textSize="17sp"
+                            android:textColor="@color/black"
+                            />
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                              <TextView
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:text="Rs."
+                                  android:textSize="14sp"
+                                  android:textStyle="bold"
+                                  android:textColor="@color/blue"
+                                  />
+                              <TextView
+                                  android:id="@+id/cart_list_layout_price"
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:text="45"
+                                  android:textSize="14sp"
+                                  android:textStyle="bold"
+                                  android:textColor="@color/blue"
+                                  />
+                        </LinearLayout>
+                  </LinearLayout>
+
+                  <LinearLayout
+                      android:layout_width="0dp"
+                      android:layout_height="match_parent"
+                      android:layout_weight="0.7"
+                      android:orientation="vertical"
+                      android:gravity="center">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                              <TextView
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:text="Rs."
+                                  android:textSize="14sp"
+                                  android:textStyle="bold"
+                                  android:textColor="@color/blue"
+                                  />
+                              <TextView
+                                  android:id="@+id/cart_list_layout_total_price"
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:text="45"
+                                  android:textSize="14sp"
+                                  android:textStyle="bold"
+                                  android:textColor="@color/blue"
+                                  />
+                        </LinearLayout>
+                              <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                                  android:id="@+id/num_btn"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:gravity="center"
+                                  app:backGroundColor="@color/grey"
+                                  app:backgroundDrawable="@drawable/button_blue"
+                                  app:finalNumber="20"
+                                  app:initialNumber="1"
+                                  app:textColor="@color/blue"
+                                  app:textSize="7sp">
+
+                              </com.cepheuen.elegantnumberbutton.view.ElegantNumberButton>
+
+                  </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+      </LinearLayout>
+
+</androidx.cardview.widget.CardView>
